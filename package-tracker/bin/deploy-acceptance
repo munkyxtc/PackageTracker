@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-if [ ! -f tmp/cf-cli-installer.deb ]; then
-  wget -O tmp/cf-cli-installer.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.12.3&source=github-rel'
-fi
+#if [ ! -f tmp/cf-cli-installer.deb ]; then
+#  wget -O tmp/cf-cli-installer.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.12.3&source=github-rel'
+#fi
 
-sudo dpkg -i tmp/cf-cli-installer.deb
+#sudo dpkg -i tmp/cf-cli-installer.deb
 
 mvn package -DskipTests
 
