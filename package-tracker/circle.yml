@@ -1,0 +1,16 @@
+machine:
+  java:
+    version: oraclejdk8
+
+deployment:
+  acceptance:
+    branch: master
+    commands:
+      - bin/deploy-acceptance
+
+general:
+  branches:
+    only:
+      - master
+  artifacts:
+    - target/package-tracker-0.0.1-SNAPSHOT.jar
